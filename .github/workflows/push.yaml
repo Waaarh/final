@@ -1,11 +1,5 @@
 name: golang-pipeline
-on:
-  push:
-    tags:
-      - 'v*'
-    branches:
-      - '**'
-  pull_request:
+on: push
 jobs:
   test:
     runs-on: ubuntu-latest
